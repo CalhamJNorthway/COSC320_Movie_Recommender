@@ -34,9 +34,10 @@ function App() {
   const [currentTab, setCurrentTab] = useState<Routes>(Routes.dataSet);
 
   const getRecommendations = () => {
-    axios({ method: "GET", url: "http://localhost:8080/results" })
+    axios({ method: "GET", url: "https://raw.githubusercontent.com/CalhamJNorthway/Test-Express/master/src/similarityResults.json" })
       .then((value) => {
-        setUserData(JSON.parse(value.data.results));
+        console.log(value);
+        setUserData(JSON.parse(value.data));
       })
       .catch((error) => {
         console.log(error);
