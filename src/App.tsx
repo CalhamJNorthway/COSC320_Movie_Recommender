@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Dictionary, IData, Pages, Routes } from './types';
+import { Dictionary, IData, Routes } from './types';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,7 +7,7 @@ import {
   Route,
   useHistory,
 } from "react-router-dom";
-import { Typography, Button, AppBar as MuiBar, Tabs, Tab, Divider } from "@material-ui/core";
+import { Typography, AppBar as MuiBar, Tabs, Tab, Divider } from "@material-ui/core";
 import axios from 'axios';
 import _ from "lodash";
 
